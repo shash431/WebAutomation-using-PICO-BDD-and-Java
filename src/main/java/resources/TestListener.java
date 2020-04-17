@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 public class TestListener implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
-		System.out.println("I am running from listeners");
+		
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -31,7 +31,7 @@ public class TestListener implements ITestListener {
 	}
 
 	public void onStart(ITestContext context) {
-		System.out.println("Running with TestNG");
+		
 	}
 
 	public void onFinish(ITestContext context) {

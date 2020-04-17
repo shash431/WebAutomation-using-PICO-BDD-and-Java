@@ -1,6 +1,6 @@
 Automation task documentation.
 
-This project is based on a Maven template, The goal is to automate some ProtonMail functionality (Labels and Folders).
+This project is based on a Maven template, The goal is to automate some functionality
 The project is written in Java using Selenium, Cucumber, and TestNG as a runner. 
 
 The project uses a page object pattern architecture combined with a BDD approach (cucumber). BDD approach allows every member of the organization 
@@ -60,7 +60,7 @@ Run the project
 
 The following command is used to run the project.
 
- mvn test -Dbrowser=chrome -Dheadless=false -DtestNGfile=testngSerial.xml -Dcucumber.options="--tags @sanity" verify
+ mvn test -Dbrowser=chrome -Dheadless=false -DtestNGfile=testngParallel.xml -Dcucumber.options="--tags @Widgets" verify
 
 Arguments:
 
@@ -68,17 +68,3 @@ browser: is possible to run with Firefox and Chrome, by default uses Chrome
 headless: when the argument is true, run headless, which means that the browser is not visible. 
 TestNGfile: here you can provide which testng file do you want to run the test with. 
 cucumber.options: you can provide tags if you want to run some particular tests.
-
-Github repo
-
-Project can be found here ==> https://github.com/jmdsf/automationTask
-
-Connection with Jenkins
-
-Jenkins connects directly with Github to run the project and there is a job to run it.
-
-
-URL: http://192.168.0.15:8080/
-User: TestUser
-Pass: Pass123
-
