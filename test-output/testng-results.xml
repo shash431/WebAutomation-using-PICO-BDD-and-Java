@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="11" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="42160" started-at="2020-04-17T12:02:07 CEST" finished-at="2020-04-17T12:02:50 CEST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="42160" started-at="2020-04-17T12:02:07 CEST" finished-at="2020-04-17T12:02:50 CEST">
+      <class name="cucumberOptions.TestRunnerParallelAll">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="setUpClass" is-config="true" duration-ms="173" started-at="2020-04-17T12:02:07 CEST" finished-at="2020-04-17T12:02:08 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="39313" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:47 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Compare actual and expected picture"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare actual and expected picture of ui"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="29488" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:37 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check drag and drop"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Droppable functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="29551" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:37 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check resize placeholder"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Resizable functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="28431" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:36 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check that elements are displayd in tha table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["table functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="40765" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:49 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Compare actual and expected picture"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare actual and expected picture of ui"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[There is a difference between the actual homePageModified image and the expected image did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: There is a difference between the actual homePageModified image and the expected image did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at stepDefinitions.DemoQAStepDefinitions.ui_is_as_expected(DemoQAStepDefinitions.java:21)
+at ✽."homePageModified" UI is as expected(file:///Users/Juan/SeleniumProject/WebAutomation/src/test/java/features/ImageComparison.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="30395" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:38 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check that elements are displayd in tha table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["table functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="29750" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:38 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check two items selection"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Selectable functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="29502" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:37 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check one item selection"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Selectable functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="28413" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:36 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check new windows browser"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Windows functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="36487" started-at="2020-04-17T12:02:08 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:44 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check new tab"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Windows functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="runScenario" duration-ms="9564" started-at="2020-04-17T12:02:36 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-17T12:02:46 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check alert"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Windows functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunnerParallelAll@184f6be2]" name="tearDownClass" is-config="true" duration-ms="939" started-at="2020-04-17T12:02:49 CEST" finished-at="2020-04-17T12:02:50 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestRunnerParallelAll -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
