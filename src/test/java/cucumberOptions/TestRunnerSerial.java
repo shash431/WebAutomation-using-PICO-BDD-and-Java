@@ -9,8 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features="src/test/java/features", 
 glue ="stepDefinitions", 
-plugin={"json:target/jsonReports/cucumber-report.json"},
-tags={"@Widgets","@Interactions", "not @ignore"})
+plugin={"json:target/jsonReports/cucumber-report.json"})
 public class TestRunnerSerial extends AbstractTestNGCucumberTests{
 	
 @BeforeSuite

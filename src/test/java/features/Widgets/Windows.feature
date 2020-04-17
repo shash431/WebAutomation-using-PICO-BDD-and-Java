@@ -11,7 +11,7 @@ Feature: Windows functionality
 	    When User click on "New Browser Tab" button
 	    Then User get redirected to "https://www.toolsqa.com/"
 	    
-    @ignore
+    @smoke
 	Scenario: Check alert
 	    Given User click in "Automation Practice Switch Windows" item
 	    When User click on "Alert Box" button
